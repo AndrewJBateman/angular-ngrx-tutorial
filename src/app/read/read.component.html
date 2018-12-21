@@ -2,7 +2,8 @@
 
   <h3>Tutorials</h3>
   <ul>
-    <li (click)="delTutorial(i)" *ngFor="let tutorial of tutorials | async">
+    <!--This will pass the index of the currently clicked list item to a function called delTutorial().-->
+    <li (click)="delTutorial(i)" *ngFor="let tutorial of tutorials | async; let i = index">
       <a [href]="tutorial.url" target="_blank">{{ tutorial.name }}</a>
     </li>
   </ul>

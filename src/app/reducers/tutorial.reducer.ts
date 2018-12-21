@@ -15,10 +15,10 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 //In the event that the action.type does not match any cases, it will simply return the state, as provided in the first parameter of our reducer
     switch(action.type) {
         case TutorialActions.ADD_TUTORIAL:
-            return [...state, action.payload];
+            return [...state, action.payload];//use spread operator to add action.payload to the array (called state)
 
         case TutorialActions.REMOVE_TUTORIAL:
-            state.splice(action.payload, 1);
+            state.splice(action.payload, 1);//use splice to remove 1 item
             return state;
 
         default:

@@ -19,7 +19,7 @@ export class ReadComponent implements OnInit {
   constructor(private store: Store<AppState>) { 
     this.tutorials = store.select('tutorial');
   }
-
+  //This will call our RemoveTutorial action and pass in the index.
   delTutorial(index) {
     this.store.dispatch(new TutorialActions.RemoveTutorial(index))
   }
