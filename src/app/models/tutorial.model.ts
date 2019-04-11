@@ -1,5 +1,5 @@
-//simple model
+// simple model
 export interface Tutorial {
-	name: string;
-	url: string;
+  name: string;
+  url: string;
 }

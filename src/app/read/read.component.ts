@@ -15,13 +15,15 @@ export class ReadComponent implements OnInit {
   // Section 1: define an observable named tutorials which we will later display in the template.
   tutorials: Observable<Tutorial[]>;
 
-  // Section 2: access the store from ngrx within the constructor, and then selecting tutorial which is defined as a the property from app.module.ts in StoreModule.forRoot({}). This calls the tutorial reducer and returns the tutorial state.
-  constructor(private store: Store<AppState>) { 
+/*   Section 2: access the store from ngrx within the constructor, and then selecting tutorial
+  which is defined as a property from app.module.ts in StoreModule.forRoot({}).
+  This calls the tutorial reducer and returns the tutorial state. */
+  constructor(private store: Store<AppState>) {
     this.tutorials = store.select('tutorial');
   }
-  //This will call our RemoveTutorial action and pass in the index.
+  // This will call our RemoveTutorial action and pass in the index.
   delTutorial(index) {
-    this.store.dispatch(new TutorialActions.RemoveTutorial(index))
+    this.store.dispatch(new TutorialActions.RemoveTutorial(index));
   }
 
   ngOnInit() {}
