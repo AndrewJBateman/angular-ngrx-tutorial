@@ -17,7 +17,7 @@ App that allows users to submit the name and url of a tutorial using a simple fo
 
 ## General info
 
-This app uses Ngrx Store, a RxJS-powered state management solution, to organise organise the app`s state. Ngrx was built for Angular.
+This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. Ngrx was built for Angular.
 
 ## Screenshots
 
@@ -25,9 +25,13 @@ This app uses Ngrx Store, a RxJS-powered state management solution, to organise 
 
 ## Technologies
 
-* [Angular v7.2.12](https://angular.io/) & [Angular CLI v7.3.8](https://cli.angular.io/).
+* [Angular v8.0.0](https://angular.io/)
 
-* [RxJS Library v6.3.3](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
+* [Angular CLI v8.0.1](https://cli.angular.io/).
+
+* [RxJS Library v6.5.2](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
+
+* [ngrx/store v8.0.0](https://ngrx.io/guide/store)
 
 * [Angular Augury Chrome Extension](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd) v1.23.0 used for debugging.
 
@@ -80,7 +84,7 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## Status & To-Do List
 
-* Status: simple working app.
+* Status: Working.
 
 * To-Do: add a delete button to the right of each item in the component read list. Improve the list to use Angular Forms better.
 
@@ -92,4 +96,4 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
