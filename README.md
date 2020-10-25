@@ -1,10 +1,10 @@
-# Angular ngRx Tutorial
+# :zap: Angular ngRx Tutorial
 
-App that allows users to submit the name and url of a tutorial using a simple form and also to remove a tutorial, by using [Ngrx/store](https://ngrx.io/), RxJS-powered state management.
+* App that allows users to submit the name and url of a tutorial using a simple form and also to remove a tutorial, by using [Ngrx/store](https://ngrx.io/), RxJS-powered state management.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -15,31 +15,27 @@ App that allows users to submit the name and url of a tutorial using a simple fo
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## :books: General info
 
-This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. Ngrx was built for Angular.
+* This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. Ngrx was built for Angular.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/write-and-read-components.png).
 
-## Technologies
+## :signal_strength: Technologies
 
-* [Angular v8.0.0](https://angular.io/)
-
-* [Angular CLI v8.0.1](https://cli.angular.io/).
-
-* [RxJS Library v6.5.2](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-
-* [ngrx/store v8.0.0](https://ngrx.io/guide/store)
-
+* [Angular v8](https://angular.io/)
+* [Angular CLI v8](https://cli.angular.io/).
+* [RxJS Library v6](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
+* [ngrx/store v8](https://ngrx.io/guide/store)
 * [Angular Augury Chrome Extension](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd) v1.23.0 used for debugging.
 
-## Setup
+## :floppy_disk: Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code Examples
+## :computer: Code Examples
 
 * _tutorial.reducer.ts_ file
 
@@ -78,22 +74,20 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 }
 ```
 
-## Features
+## :cool: Features
 
 * adds titles of courses and weblinks to a list array using ngrx for state management.  
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working.
-
 * To-Do: add a delete button to the right of each item in the component read list. Improve the list to use Angular Forms better.
 
-## Inspiration
+## :clap: Inspiration
 
 * [Gary Simon tutorial: Ngrx Store Tutorial for Angular - Learn State Management for Angular](https://coursetro.com/posts/code/151/Angular-Ngrx-Store-Tutorial---Learn-Angular-State-Management).
-
 * [article by Richard Oliver Bray](https://medium.com/@richbray): [A Beginner’s Guide to Ngrx/store](https://medium.com/stratajet-tech/a-beginners-guide-to-ngrx-store-bc2184d6d7f0).
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
