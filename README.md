@@ -1,19 +1,23 @@
 # :zap: Angular ngRx Tutorial
 
 * App that allows users to submit the name and url of a tutorial using a simple form and also to remove a tutorial, by using [Ngrx/store](https://ngrx.io/), RxJS-powered state management.
+* Tutorial code from Gary Simon at [Coursetro](https://www.coursetro.com) - see [:clap: Inspiration](#clap-inspiration) below
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Angular ngRx Tutorial](#zap-angular-ngrx-tutorial)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
@@ -25,10 +29,10 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v8](https://angular.io/)
-* [Angular CLI v8](https://cli.angular.io/).
+* [Angular v11](https://angular.io/)
+* [Angular CLI v11](https://cli.angular.io/).
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-* [ngrx/store v8](https://ngrx.io/guide/store)
+* [ngrx/store v10](https://ngrx.io/guide/store)
 * [Angular Augury Chrome Extension](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd) v1.23.0 used for debugging.
 
 ## :floppy_disk: Setup
@@ -44,25 +48,16 @@ import { Action } from '@ngrx/store';
 import { Tutorial } from './../models/tutorial.model';
 import * as TutorialActions from './../actions/tutorial.actions';
 
-// Section 1: define an initial or default state
 const initialState: Tutorial = {
   name: 'Initial Tutorial',
   url: 'http://google.com'
 };
 
-/* Section 2: This is our actual reducer. It takes in a state, defined as a Tutorial type
-and optionally bound to initialState.
-It also takes in the action from our /actions/tutorial.actions file. */
 export function reducer(state: Tutorial[] = [initialState], action: TutorialActions.Actions) {
 
-/* Section 3: Use a switch to determine the type of action. In the case of adding a tutorial,
-  we return the new state with the help of our newState() function. We're simply passing in the
-  previous state in the first parameter, and then our action in the second.
-  In the event that the action.type does not match any cases, it will simply return
-  the state, as provided in the first parameter of our reducer */
   switch (action.type) {
     case TutorialActions.ADD_TUTORIAL:
-      return [...state, action.payload]; // use spread operator to add action.payload to the array (called state)
+      return [...state, action.payload]; // use spread operator to add action.payload to the array
 
       case TutorialActions.REMOVE_TUTORIAL:
         state.splice(action.payload, 1); // use splice to remove 1 item
@@ -76,12 +71,12 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :cool: Features
 
-* adds titles of courses and weblinks to a list array using ngrx for state management.  
+* adds titles of courses and weblinks to a list array using ngrx for state management.
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working.
-* To-Do: add a delete button to the right of each item in the component read list. Improve the list to use Angular Forms better.
+* Status: Working
+* To-Do: Nothing
 
 ## :clap: Inspiration
 
@@ -90,4 +85,4 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
