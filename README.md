@@ -35,7 +35,7 @@
 
 * [Angular v12](https://angular.io/)
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-* [ngrx/store v10](https://ngrx.io/guide/store)
+* [ngrx/store v12](https://ngrx.io/guide/store)
 * [Angular Augury Chrome Extension](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd) v1.23.0 used for debugging.
 
 ## :floppy_disk: Setup
@@ -75,7 +75,7 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :cool: Features
 
-* adds titles of courses and weblinks to a list array using ngrx for state management.
+* Adds titles of courses and weblinks to a list array using ngrx for state management.
 
 ## :clipboard: Status & To-Do List
 
@@ -85,7 +85,7 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 ## :clap: Inspiration
 
 * [Gary Simon tutorial: Ngrx Store Tutorial for Angular - Learn State Management for Angular](https://coursetro.com/posts/code/151/Angular-Ngrx-Store-Tutorial---Learn-Angular-State-Management).
-* [article by Richard Oliver Bray](https://medium.com/@richbray): [A Beginner’s Guide to Ngrx/store](https://medium.com/stratajet-tech/a-beginners-guide-to-ngrx-store-bc2184d6d7f0).
+* [Article by Richard Oliver Bray](https://medium.com/@richbray): [A Beginner’s Guide to Ngrx/store](https://medium.com/stratajet-tech/a-beginners-guide-to-ngrx-store-bc2184d6d7f0).
 
 ## :file_folder: License
 
