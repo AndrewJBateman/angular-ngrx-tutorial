@@ -1,9 +1,13 @@
-# :zap: Angular ngRx Tutorial
+# :zap: Angular Ngrx Tutorial
 
-* App that allows users to submit the name and url of a tutorial using a simple form and also to remove a tutorial, by using [Ngrx/store](https://ngrx.io/), RxJS-powered state management.
+* App that allows users to submit the name and url of a tutorial using a simple form and also to remove a tutorial, by using [ngrx/store](https://ngrx.io/), RxJS-powered state management.
 * Tutorial code from Gary Simon at [Coursetro](https://www.coursetro.com) - see [:clap: Inspiration](#clap-inspiration) below
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-ngrx-tutorial?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-ngrx-tutorial?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-ngrx-tutorial?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-ngrx-tutorial?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -37,7 +41,8 @@
 
 ## :floppy_disk: Setup
 
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng serve` for a dev server.
+* Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## :computer: Code Examples
 
@@ -75,7 +80,7 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working. Updated may 2021
 * To-Do: Nothing
 
 ## :clap: Inspiration
@@ -83,6 +88,10 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 * [Gary Simon tutorial: Ngrx Store Tutorial for Angular - Learn State Management for Angular](https://coursetro.com/posts/code/151/Angular-Ngrx-Store-Tutorial---Learn-Angular-State-Management).
 * [article by Richard Oliver Bray](https://medium.com/@richbray): [A Beginner’s Guide to Ngrx/store](https://medium.com/stratajet-tech/a-beginners-guide-to-ngrx-store-bc2184d6d7f0).
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
