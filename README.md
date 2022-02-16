@@ -21,11 +21,12 @@
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
-* This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. Ngrx was built for Angular.
+* This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. Ngrx was built for Angular. Ngrx is overkill for such a simple app but this is for learning purposes only.
 
 ## :camera: Screenshots
 
@@ -33,10 +34,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
-* [RxJS Library v6](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-* [ngrx/store v12](https://ngrx.io/guide/store)
-* [Angular Augury Chrome Extension](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd) v1.23.0 used for debugging.
+* [Angular v13](https://angular.io/)
+* [RxJS Library v7](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
+* [ngrx/store v13](https://ngrx.io/guide/store)
 
 ## :floppy_disk: Setup
 
@@ -79,7 +79,7 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Updated may 2021
+* Status: Working.
 * To-Do: Nothing
 
 ## :clap: Inspiration
