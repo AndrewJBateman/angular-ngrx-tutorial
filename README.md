@@ -11,7 +11,7 @@
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Angular ngRx Tutorial](#zap-angular-ngrx-tutorial)
+* [:zap: Angular Ngrx Tutorial](#zap-angular-ngrx-tutorial)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
@@ -26,7 +26,7 @@
 
 ## :books: General info
 
-* This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. Ngrx was built for Angular. Ngrx is overkill for such a simple app but this is for learning purposes only.
+* This app uses Ngrx Store, a RxJS-powered state management solution, to organise the app`s state. NgRX was built for Angular. NgRX is overkill for such a simple app but this is for learning purposes only.
 
 ## :camera: Screenshots
 
@@ -34,7 +34,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
 * [ngrx/store v13](https://ngrx.io/guide/store)
 
@@ -75,7 +75,7 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :cool: Features
 
-* Adds titles of courses and weblinks to a list array using ngrx for state management.
+* Adds titles of courses and weblinks to a list array using NgRX for state management.
 
 ## :clipboard: Status & To-Do List
 
