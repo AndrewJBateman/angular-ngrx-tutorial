@@ -1,7 +1,6 @@
 # :zap: Angular Ngrx Tutorial
 
 * App that allows users to submit the name and url of a tutorial using a simple form and also to remove a tutorial, by using [ngrx/store](https://ngrx.io/), RxJS-powered state management.
-* Tutorial code from Gary Simon at [Coursetro](https://www.coursetro.com) - see [:clap: Inspiration](#clap-inspiration) below
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-ngrx-tutorial?style=plastic)
@@ -34,9 +33,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [RxJS Library v7](https://angular.io/guide/rx-library) used to handle datastreams and propagation of change using observables.
-* [ngrx/store v13](https://ngrx.io/guide/store)
+* [ngrx/store v15](https://ngrx.io/guide/store)
 
 ## :floppy_disk: Setup
 
@@ -84,7 +83,6 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
 
 ## :clap: Inspiration
 
-* [Gary Simon tutorial: Ngrx Store Tutorial for Angular - Learn State Management for Angular](https://coursetro.com/posts/code/151/Angular-Ngrx-Store-Tutorial---Learn-Angular-State-Management).
 * [Article by Richard Oliver Bray](https://medium.com/@richbray): [A Beginner’s Guide to Ngrx/store](https://medium.com/stratajet-tech/a-beginners-guide-to-ngrx-store-bc2184d6d7f0).
 
 ## :file_folder: License
