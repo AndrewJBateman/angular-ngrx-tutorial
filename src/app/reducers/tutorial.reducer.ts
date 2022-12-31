@@ -2,15 +2,22 @@ import { Tutorial } from './../models/tutorial.model';
 import * as TutorialActions from './../actions/tutorial.actions';
 
 // Section 1: define an initial or default state
-const initialState: Tutorial = {
-  name: 'Initial Tutorial',
+const initialState: Tutorial[] = [
+  {  name: 'Initial Tutorial',
   url: 'http://google.com'
-};
+  },
+  {  name: 'Second Tutorial',
+  url: 'http://bbc.com'
+  },
+  {  name: 'Third Tutorial',
+  url: 'http://amazon.com'
+  },
+];
 
 /* Section 2: This is our actual reducer. It takes in a state, defined as a Tutorial type
 and optionally bound to initialState.
 It also takes in the action from our /actions/tutorial.actions file. */
-export function reducer(state: Tutorial[] = [initialState], action: TutorialActions.Actions) {
+export function reducer(state: Tutorial[] = initialState, action: TutorialActions.Actions) {
 
 /* Section 3: Use a switch to determine the type of action. In the case of adding a tutorial,
   we return the new state with the help of our newState() function. We're simply passing in the
@@ -22,8 +29,9 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
       return [...state, action.payload]; // use spread operator to add action.payload to the array (called state)
 
       case TutorialActions.REMOVE_TUTORIAL:
-        state.splice(action.payload, 1); // use splice to remove 1 item
-        return state;
+        const currentState = [...state];
+        currentState.splice(action.payload, 1); // use splice to remove selected item
+        return currentState;
 
       default:
         return state;

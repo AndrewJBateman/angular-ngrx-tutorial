@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Observable } from "rxjs";
 import { Store } from "@ngrx/store";
 import { Tutorial } from "./../models/tutorial.model";
@@ -10,7 +10,7 @@ import * as TutorialActions from "./../actions/tutorial.actions";
   templateUrl: "./read.component.html",
   styleUrls: ["./read.component.css"],
 })
-export class ReadComponent implements OnInit {
+export class ReadComponent {
   // Section 1: define an observable named tutorials which we will later display in the template.
   tutorials: Observable<Tutorial[]>;
 
@@ -21,9 +21,10 @@ export class ReadComponent implements OnInit {
     this.tutorials = store.select("tutorial");
   }
   // This will call our RemoveTutorial action and pass in the index.
+  // reaccess modified store
   delTutorial(index: number) {
     this.store.dispatch(new TutorialActions.RemoveTutorial(index));
+    this.tutorials = this.store.select("tutorial");
   }
 
-  ngOnInit() {}
 }
