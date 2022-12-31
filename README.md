@@ -62,12 +62,13 @@ export function reducer(state: Tutorial[] = [initialState], action: TutorialActi
     case TutorialActions.ADD_TUTORIAL:
       return [...state, action.payload]; // use spread operator to add action.payload to the array
 
-      case TutorialActions.REMOVE_TUTORIAL:
-        state.splice(action.payload, 1); // use splice to remove 1 item
-        return state;
+    case TutorialActions.REMOVE_TUTORIAL:
+      const currentState = [...state];
+      currentState.splice(action.payload, 1); // use splice to remove selected item
+      return currentState;
 
-      default:
-        return state;
+    default:
+      return state;
   }
 }
 ```
